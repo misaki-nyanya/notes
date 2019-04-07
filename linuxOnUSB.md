@@ -5,7 +5,8 @@
 
 首先刷个grub:
 > ### [安装grub2到U盘和移动硬盘的方法](https://www.nenew.net/install-grub2-u-disk-hard-disk.html)
-`grub2引导很强大，今天奶牛来说说如何安装grub2到U盘或者移动硬盘上。
+```
+grub2引导很强大，今天奶牛来说说如何安装grub2到U盘或者移动硬盘上。
 
 首先进入终端
 
@@ -27,5 +28,6 @@ mount /dev/sdb ./u （这里是把设备挂载到一个目录下，如果大家�
 
 sudo grub-install –root-directory=/mnt/u /dev/sdb
 
-运行到这里就安装完成了。大家可以重启看效果了，看看u盘启动是不是有grub2了~`
+运行到这里就安装完成了。大家可以重启看效果了，看看u盘启动是不是有grub2了~
+```
 
