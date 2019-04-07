@@ -1,4 +1,4 @@
-# （重复劳动）安装Puppy到U盘
+# （重复劳动）安装Puppy到U盘--GRUB2
 
 最近Design School解体， 从一堆尸体中翻出一个4G U盘， 很可耻地带了回来打算日常用。
 以及最近教一个学部生Linux的知识时忽然重燃往日激情hhhhh，发现Puppy更新了，于是...
@@ -31,7 +31,7 @@ sudo grub-install –root-directory=/mnt/u /dev/sdb
 运行到这里就安装完成了。大家可以重启看效果了，看看u盘启动是不是有grub2了~
 ```
 
-立刻发现了问题， 命令应该是
+立刻发现了问题， grub2的命令应该是
 
 ```
 $ sudo grub-install –-boot-directory=/mnt/u /dev/sdb
@@ -60,9 +60,20 @@ $ sudo mkfs.ntfs /dev/sdb6
 重新格回FAT32，并发现了一个和我需求一致的[网站](https://www.pendrivelinux.com/install-grub2-on-usb-from-ubuntu-linux/)
 
 于是加了选项--force --removable， 这次通过了。
-但是看到--removable选项注有Only available on EFI，有点心虚。
+但是看到--removable选项注有Only available on EFI，有点心虚，于是放弃了这个选项。
 
-接下来写grub配置：
+尝试在实验室的淘汰机上启动了一下，**失敗**，提示插入设备。
 
+忽然发觉，这个u盘对应/dev/sdb6和/dev/sdg1两个块设备！！
 
+而Gpart不管怎样都搞不掉，看似没关联但是地址上确有一大块重合！！
 
+在网上查了一下，可能是传说中的量产。
+
+另外发现Gpart可以操作的boot flag,两个块设备都没有标上，只有/dev/sdg1有一个lba的flag。
+
+/dev/sdb6这货跟我存有linux的硬盘挂在同一个/dev/sdb上，我不能把boot的flag给它。
+所以我选择把boot flag给/dev/sdg1，并在上面重新做grub2。
+
+再次实验，看到Missing Operating System,眼泪留下来💧
+弄得太晚了，下次继续。
