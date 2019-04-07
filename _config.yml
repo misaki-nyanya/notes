@@ -1,1 +1,17 @@
 theme: jekyll-theme-hacker
+
+# settings from web
+# Site settings
+title: Nyanya Notes    				  	#你博客的标题
+SEOTitle: Nyanya Notes    	 #显示在浏览器上搜索的时候显示的标题
+header-img: https://ja.wikipedia.org/wiki/%E6%B5%B7#/media/File:Caribbean_sea_-_Morrocoy_National_Park_-_Playa_escondida.jpg  	#显示在首页的背景图片
+email: You@gmail.com	
+description: "Nyanyanya"  			 #网站介绍
+keyword: "Nya, Blog, 博客, Note, note" #关键词
+url: "https://misaki-nyanya.github.io/notes/"          # 这个就是填写你的博客地址
+baseurl: ""      # 这个我们不用填写
+
+# Sidebar settings
+#sidebar: true                           # 是否开启侧边栏.
+#sidebar-about-description: "说点装逼的话。。。"
+#sidebar-avatar:/img/avatar-by.JPG      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
