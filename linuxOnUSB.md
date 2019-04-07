@@ -49,6 +49,20 @@ $ sudo grub-install –-boot-directory=/mnt/u /dev/sdb
 $ sudo umount /dev/sdb6
 $ sudo mkfs.ntfs /dev/sdb6
 ```
-其实我还是很不甘心放弃FAT32的。毕竟兼容性最强
-
+其实我还是很不甘心放弃FAT32的。毕竟兼容性最强。
 顺便提一下mkfs.fat和mkfs.vfat，似乎是fat的一个进化版，支持长文件名。其他没有区别。
+
+
+然后TMD发现
+# 依旧错误！！！！
+
+尼玛，问题不是文件系统。
+重新格回FAT32，并发现了一个和我需求一致的[网站](https://www.pendrivelinux.com/install-grub2-on-usb-from-ubuntu-linux/)
+
+于是加了选项--force --removable， 这次通过了。
+但是看到--removable选项注有Only available on EFI，有点心虚。
+
+接下来写grub配置：
+
+
+
