@@ -31,3 +31,24 @@ sudo grub-install –root-directory=/mnt/u /dev/sdb
 运行到这里就安装完成了。大家可以重启看效果了，看看u盘启动是不是有grub2了~
 ```
 
+立刻发现了问题， 命令应该是
+
+```
+$ sudo grub-install –-boot-directory=/mnt/u /dev/sdb
+```
+
+运行了一下， 爆炸， 说 
+1. File system fat doesn't support embedding.
+2. Embedding is not posible, GRUB can only be installed in this setup by using blocklists, However , blocklists are unreliable and their use is doscouraged.
+3. error: will not proceed with blocklists.
+
+莫非是FAT32的锅？！
+
+来格个盘
+```
+$ sudo umount /dev/sdb6
+$ sudo mkfs.ntfs /dev/sdb6
+```
+其实我还是很不甘心放弃FAT32的。毕竟兼容性最强
+
+顺便提一下mkfs.fat和mkfs.vfat，似乎是fat的一个进化版，支持长文件名。其他没有区别。
