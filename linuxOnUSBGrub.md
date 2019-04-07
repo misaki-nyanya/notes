@@ -4,7 +4,9 @@
 以及最近教一个学部生Linux的知识时忽然重燃往日激情hhhhh，发现Puppy更新了，于是...
 
 首先刷个grub:
-> ### [安装grub2到U盘和移动硬盘的方法](https://www.nenew.net/install-grub2-u-disk-hard-disk.html)
+
+ ### [安装grub2到U盘和移动硬盘的方法](https://www.nenew.net/install-grub2-u-disk-hard-disk.html)
+
 ```
 grub2引导很强大，今天奶牛来说说如何安装grub2到U盘或者移动硬盘上。
 首先进入终端
