@@ -69,6 +69,14 @@ $ sudo mkfs.ntfs /dev/sdb6
 再次实验，看到Missing Operating System,眼泪留下来💧
 弄得太晚了，下次继续。
 
+补充一些查看设备的一些命令
+```
+查看挂载点和uuid
+$ sudo blkid -o list
+查看所有usb设备
+$ lsusb
+```
+
 [另附一个参考](https://wiki.archlinux.org/index.php/Multiboot_USB_drive)
 [再来一个参考](https://www.pendrivelinux.com/boot-multiple-iso-from-usb-via-grub2-using-linux/)
 [鸟哥](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/168.html)
