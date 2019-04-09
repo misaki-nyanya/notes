@@ -51,3 +51,19 @@ usermod -a -G vboxusers sharl
 很棒，看到设备了。
 
 接下来搞grub.
+
+速度安装完uefi的grub然后再回宿主机装i386的grub。
+
+# 爽
+
+用研究室多余的老机器运行了一下，发现能进grub，但是puppy加载内核后
+找不到北2333
+
+想了想大概是因为下的镜像只支持uefi,毕竟名字也叫bionicpup32-8.0-uefi.iso
+
+于是转身向德狗大法好。（puppy precise我用过，非常先进）
+[DebianDog](https://debiandog.github.io/doglinux/)
+
+下了两个镜像竟然还把我禁ip了？？
+
+嘛嘛嘛。
