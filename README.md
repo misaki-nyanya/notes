@@ -2,8 +2,10 @@
 
 ### Collected from web? Or may be original.
 
-[To install Puppy on USB drive -- Install Grub2](./linuxOnUSBGrub/linuxOnUSBGrub1.md)
+[To install Puppy on USB drive -- Install Grub2 Chapter 1](./linuxOnUSBGrub/linuxOnUSBGrub1.md)
 
-[To install Puppy on USB drive -- Install Grub2 (2)](./linuxOnUSBGrub/linuxOnUSBGrub2.md)
+[To install Puppy on USB drive -- Install Grub2 Chapter 2](./linuxOnUSBGrub/linuxOnUSBGrub2.md)
 
-[如何在Mac的VirtualBox上从USB启动（摔](./virtualBoxUSBBootMac.md)
+[How to use USB stick Live CD in VirtualBox（Mac) ](./virtualBoxUSBBootMac.md)
+
+[Installation note on OpenSUSE Leap 15.5 on ThinkPad T495](./OpenSUSE_Setup_Note.md)
