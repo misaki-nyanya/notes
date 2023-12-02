@@ -12,8 +12,8 @@ header-img: "/img/banner.png"  	#显示在首页的背景图片
 email: spinning_eggs@163.com	
 description: "Nya nya nya"  			 #网站介绍
 keyword: "Nya, Blog, 博客, Note, note" #关键词
-#url: "https://misaki-nyanya.github.io/notes/"          # 这个就是填写你的博客地址
-baseurl: ""      # 这个我们不用填写
+url: "https://misaki-nyanya.github.io/notes/"          # 这个就是填写你的博客地址
+baseurl: "ttps://misaki-nyanya.github.io/notes/"      # 这个我们不用填写
 
 # Sidebar settings
 sidebar: true                           # 是否开启侧边栏.
